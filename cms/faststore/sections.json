@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Countdown",
+      "schema": {
+        "title": "Countdown",
+        "description": "A simple countdown",
+        "type": "object",
+        "required": [
+          "title",
+          "date"
+        ],
+        "properties": {
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "date": {
+            "title": "Date (MM/DD/YYYY)",
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]

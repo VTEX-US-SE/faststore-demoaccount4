@@ -47,10 +47,10 @@ module.exports = {
 
   // Production URLs
   storeUrl: "https://demoaccount4.vtex.app",
-  secureSubdomain: "https://secure.vtexfaststore.com/",
-  checkoutUrl: "https://secure.vtexfaststore.com/checkout",
-  loginUrl: "https://secure.vtexfaststore.com/api/io/login",
-  accountUrl: "https://secure.vtexfaststore.com/api/io/account",
+  secureSubdomain: "https://demoaccount4.myvtex.com",
+  checkoutUrl: "https://demoaccount4.myvtex.com/checkout",
+  loginUrl: "https://demoaccount4.myvtex.com/login",
+  accountUrl: "https://demoaccount4.myvtex.com/account",
 
   previewRedirects: {
     home: '/',

@@ -7,14 +7,31 @@
   .theme {
     // --------------------------------------------------------
     // Colors (Branding Core)
-    // --------------------------------------------------------
-    --fs-color-main-0: #f1f2f3;
+
+    // PALETTE
+    --fs-color-main-0: #e1e1e1;
+    --fs-color-main-1: #e1e1e1;
+    --fs-color-main-2: #000;
+    --fs-color-main-3: #000;
+    --fs-color-main-4: #000;
+
+    --fs-color-accent-0: #b60610;
+    --fs-color-accent-1: #b60610;
+    --fs-color-accent-2: #b60610;
+    --fs-color-accent-3: #b60610;
+    --fs-color-accent-4: #b60610;
+
+    --fs-color-primary-bkg: #e1e1e1;
+    --fs-color-primary-text: #000;
+    --fs-color-secondary-bkg: #000;
+
     // --------------------------------------------------------
     // Typography (Branding Core)
     // --------------------------------------------------------
 
     // --------------------------------------------------------
     // Spacing (UI Essentials)
+    //
     // --------------------------------------------------------
 
     // --------------------------------------------------------
