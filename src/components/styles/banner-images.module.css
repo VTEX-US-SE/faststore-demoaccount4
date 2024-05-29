@@ -1,0 +1,19 @@
+.container{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.imageBackground{
+    height: auto;
+    min-width: 1024px;
+    max-width: 100%;
+    max-height: 772px;
+}
+.imageFront{
+    left: 4.5%;
+    top: 10%;
+    max-height: 444px;
+    max-width: 1960px;
+    min-width: 301px;
+    position: absolute;
+}

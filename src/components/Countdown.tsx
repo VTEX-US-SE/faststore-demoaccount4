@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import styles from './countdown.module.css'
+import styles from './styles/countdown.module.css'
 
 export interface CountdownProps {
   title: string;

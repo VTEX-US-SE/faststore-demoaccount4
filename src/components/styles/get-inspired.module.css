@@ -1,0 +1,66 @@
+.containerCategoriesContent{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.containerCategoriesTitle{
+    font-weight: 200;
+    margin-right: 20px;
+    font-size: 2.4rem;
+    letter-spacing: -0.05em;
+    line-height: 1.5rem;
+}
+.containerContentList{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.socialItemListlink{
+    color: #333;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0 20px;
+    text-decoration: none;
+}
+.socialItemListlink span{
+    color: #333;
+    font-family: 'LPIcons' !important;
+    -webkit-font-feature-settings: 'liga';
+    -moz-font-feature-settings: 'liga=1';
+    -moz-font-feature-settings: 'liga';
+    -ms-font-feature-settings: 'liga' 1;
+    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+}
+.instagram::before{
+    content: '\e92e';
+}
+.pinterest::before{
+    content: '\e939';
+}
+.facebook::before{
+    content: '\e921';
+}
+.youtube::before{
+    content: '\e958';
+}
+.twitter::before{
+    content: '\e94e';
+}
+.linkedin::before{
+    content: '\e967';
+}

@@ -1,0 +1,27 @@
+extend type StoreProduct {
+  """
+  Retrieve the recommended products info.
+  """
+  relatedSkus: RelatedSkus!
+}
+
+type RelatedSkus {
+  id: String!
+  skuRefId: String!
+  skuId: String!
+  items: [RelatedItem!]!
+}
+
+type RelatedItem {
+  relationshipType: String!
+  relatedSkus: [RelatedSku!]!
+}
+
+type RelatedSku {
+  relatedSkuRefId: String!
+  relatedSkuId: String!
+  quantity: Int!
+  position: Int!
+  imageUrl: String!
+  name: String!
+}

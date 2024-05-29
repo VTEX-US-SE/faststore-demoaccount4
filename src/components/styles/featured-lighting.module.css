@@ -1,0 +1,62 @@
+.container{
+    width: 100%;
+}
+.containerContent{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    width: 1280px;
+    margin: 35px auto 0;
+}
+.ItemList{
+    margin-right: 12px;
+    position: relative;
+}
+.ItemListlink{
+    display: block;
+    line-height: 2.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.ContentImage{
+    overflow: hidden;
+    line-height: 0;
+}
+.Image{
+    height: 100%;
+    margin: 0;
+    max-width: 612px;
+    width: 100%;
+    transition: 400ms ease-in-out;
+}
+.ContentImage:hover .Image{
+    transform: scale(1.05);
+}
+.Name{
+    color: #000;
+    font-size:1.4rem;
+    font-weight: bold;
+    margin: 16px 0 0;
+    padding: 0;
+    width: 100%;
+}
+.Text{
+    color: #000;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin: -10px 0 0;
+    padding: 0;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+}
+.Name:hover,
+.ItemListlink:hover .Text{
+    color: #c00;
+}
+.logo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

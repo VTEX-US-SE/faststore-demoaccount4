@@ -1,0 +1,58 @@
+.containerCategoriesOffers{
+    width: 100%;
+}
+.containerContentCategoriesOffers{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    width: 1280px;
+    margin: 35px auto 0;
+}
+.categoryOffersItemList{
+    margin-right: 12px;
+    position: relative;
+}
+.categoryOffersItemListlink{
+    display: block;
+    line-height: 2.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.categoryOffersContentImage{
+    overflow: hidden;
+    line-height: 0;
+}
+.categoryOffersImage{
+    height: 100%;
+    margin: 0;
+    max-width: 410px;
+    min-width: 292px;
+    width: 100%;
+    transition: 400ms ease-in-out;
+}
+.categoryOffersContentImage:hover .categoryOffersImage{
+    transform: scale(1.05);
+}
+.categoryOffersName{
+    color: #000;
+    font-size:1.4rem;
+    font-weight: bold;
+    margin: 16px 0 0;
+    padding: 0;
+    width: 100%;
+}
+.categoryOffersText{
+    color: #000;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin: -10px 0 0;
+    padding: 0;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+}
+.categoryOffersName:hover,
+.categoryOffersItemListlink:hover .categoryOffersText{
+    color: #c00;
+}

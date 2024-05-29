@@ -1,0 +1,170 @@
+.RelatedSkus {
+    [data-fs-button-variant="primary"] {
+        [data-fs-button-wrapper] {
+            --fs-button-primary-text-color: var(--fs-color-main-4);
+            --fs-button-primary-text-color-hover: var(--fs-color-accent-0);
+            --fs-button-primary-text-color-active: var(--fs-color-main-4);
+            --fs-button-primary-bkg-color: transparent;
+            --fs-button-primary-bkg-color-hover: transparent;
+            --fs-button-primary-bkg-color-active: transparent;
+            --fs-button-text-weight: (--fs-text-weight-light);
+            --fs-button-padding: 0;
+            text-decoration: underline;
+            text-transform: none;
+        }
+    }
+
+    [data-fs-related-products-wrapper] {
+        [data-fs-modal-container] {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--fs-color-main-5);
+            display: flex;
+            flex-direction: column;
+            padding: 1.875rem;
+            width: auto;
+            height: auto;
+            z-index: 100;
+
+            button[aria-label="Close"] {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-content: center;
+                position: absolute;
+                top: 1%;
+                right: 0;
+                cursor: pointer;
+
+                span {
+                    padding-right: .125rem;
+                }
+            }
+
+            [data-fs-modal-header] {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: var(--fs-spacing-2);
+
+                [data-fs-header-title] {
+                    font-size: var(--fs-text-size-3);
+                    font-weight: var(--fs-text-weight-bold);
+                    letter-spacing: -0.0525rem;
+                }
+
+                [data-fs-header-description] {
+                    font-size: var(--fs-text-size-1);
+                }
+            }
+
+            [data-fs-modal-description] {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                [data-fs-table] {
+                    [data-fs-table-content] {
+                        border-collapse: separate;
+                        border-spacing: 0;
+
+                        [data-fs-table-head] {
+                            [data-fs-table-cell] {
+                                background-color: var(--fs-color-main-6);
+                            }
+                        }
+
+                        [data-fs-table-body] {
+                            [data-fs-table-cell] {
+                                background-color: transparent;
+                                min-height: 6rem;
+
+                                [data-fs-input] {
+                                    width: var(--fs-spacing-6);
+                                    height: var(--fs-spacing-6);
+                                    padding: .0625rem;
+                                    text-align: center;
+                                }
+                            }
+                        }
+
+                        [data-fs-table-head],
+                        [data-fs-table-body] {
+                            [data-fs-table-row] {
+                                [data-fs-table-cell]:first-child {
+                                    width: 24rem;
+                                    text-align: left;
+                                    display: flex;
+                                    align-content: center;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+
+                                    span {
+                                        max-width: 16.875rem;
+                                        padding: 0 1rem;
+                                        white-space: pre-wrap;
+                                        align-content: center;
+                                    }
+                                }
+
+                                [data-fs-table-cell]:not(:first-child) {
+                                    min-width: 7rem;
+                                }
+                            }
+                        }
+
+                        [data-fs-table-cell] {
+                            font-size: var(--fs-text-size-0);
+                            border: .0625rem solid var(--fs-color-main-0);
+                            border-radius: 0;
+
+                            [data-fs-price-variant] {
+                                font-variant-numeric: tabular-nums;
+
+                                &::after {
+                                    font-variant-numeric: proportional-nums;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                [data-fs-button-variant="primary"] {
+                    [data-fs-button-wrapper] {
+                        --fs-button-primary-text-color: var(--fs-color-main-5);
+                        --fs-button-primary-text-color-hover: var(--fs-color-main-5);
+                        --fs-button-primary-text-color-active: var(--fs-color-main-5);
+                        --fs-button-primary-bkg-color: var(--fs-color-accent-2);
+                        --fs-button-primary-bkg-color-hover: var(--fs-color-accent-1);
+                        --fs-button-primary-bkg-color-active: var(--fs-color-main-4);
+                        --fs-button-text-weight: (--fs-text-weight-bold);
+                        --fs-button-padding: 1rem 7.625rem;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        margin: var(--fs-spacing-8) auto 1.625rem;
+                    }
+                }
+            }
+        }
+
+        [data-fs-modal-overlay] {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 99;
+
+            [data-fs-modal-open="false"] {
+                display: none;
+            }
+
+            [data-fs-modal-open="true"] {
+                display: block;
+            }
+        }
+    }
+}

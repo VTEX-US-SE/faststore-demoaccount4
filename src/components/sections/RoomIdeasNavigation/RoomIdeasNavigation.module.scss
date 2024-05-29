@@ -1,0 +1,117 @@
+.RoomIdeasNavigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    [data-fs-room-ideas-menu] {
+        display: flex;
+        flex-direction: row;
+
+        [data-fs-room-ideas-menu-item] {
+            padding: 3px 15px;
+
+            a {
+                color: var(--fs-color-main-3);
+                text-decoration: none;
+                font-weight: 700;
+                padding: 3px 15px;
+
+                &:hover {
+                    color: var(--fs-color-accent-2);
+                }
+
+                &[data-fs-menu-item-location="true"] {
+                    color: var(--fs-color-main-5);
+                    background: #373737;
+                }
+            }
+            
+            &:not(:last-child) {
+                &::after{
+                    content: "|";
+                    font-size: 12px;
+                    color: var(--fs-color-main-3);
+                    opacity: 0.5;
+                    padding-left: 30px;
+                }
+            }
+
+            &:last-child {
+                &::after{
+                    content: "|";
+                    font-size: 0;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+    [data-fs-room-ideas-grid] {
+        margin-top: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        [data-fs-room-ideas-grid-item] {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 15px;
+            text-decoration: none;
+
+            [data-fs-grid-item-btn] {
+                display: none;
+            }
+
+            &:hover {
+                [data-fs-grid-item-img][data-fs-grid-idea="true"] {
+                    filter: brightness(0.4);
+                    transition: all 0.3s ease-in-out;
+                }
+
+                [data-fs-grid-item-btn] {
+                    display: block;
+                    position: absolute;
+                    color: var(--fs-color-main-5);
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    cursor: pointer;
+                    z-index: 10;
+    
+                    border: 1px solid var(--fs-color-main-5);
+                    border-radius: 5px;
+                    font-size: 16.8px;
+                    padding: 5px 13px;
+                }
+            }
+
+            [data-fs-grid-item-title] {
+                font-size: 26px;
+                margin-top: 20px;
+                text-decoration: none;
+                color: var(--fs-color-main-4);
+            }
+        }
+    }
+
+    [data-fs-room-idea-return] {
+        margin: 70px auto 60px;
+
+        [data-fs-room-idea-return-link] {
+            border: 1px solid var(--fs-color-main-4);
+            color: var(--fs-color-main-4);
+            border-radius: 5px;
+            padding: 7px 19px;
+            text-decoration: none;
+
+            &:hover {
+                color: var(--fs-color-accent-2);
+            }
+        }
+    }
+}

@@ -20,5 +20,374 @@
           }
         }
       }
+    },
+    {
+      "name": "TopCategories",
+      "schema": {
+        "title": "Top Categories",
+        "description": "A list of top categories",
+        "type": "object",
+        "required": [
+          "title"
+        ],
+        "properties": {
+          "title": {
+            "title": "Title",
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "CategoriesOffers",
+      "schema": {
+        "title": "Categories Offers",
+        "description": "A list of categories offers",
+        "type": "object"
+      }
+    },
+    {
+      "name": "BannerImages",
+      "schema": {
+        "title": "Banner with Images",
+        "description": "A Banner with Images",
+        "type": "object",
+        "properties": {
+          "link": {
+            "title": "Link",
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "BrandsLine",
+      "schema": {
+        "title": "Brands Line",
+        "description": "A list of brands",
+        "type": "object"
+      }
+    },
+    {
+      "name": "FeaturedLighthing",
+      "schema": {
+        "title": "Featured Lighthing",
+        "description": "A list of Featured Lighthing",
+        "type": "object"
+      }
+    },
+    {
+      "name": "LandingHero",
+      "schema": {
+        "title": "Landing Hero",
+        "description": "Landing Hero Component",
+        "type": "object",
+        "properties": {
+          "title": {
+            "title": "Hero Title",
+            "type": "string"
+          },
+          "subtitle": {
+            "title": "Hero Subtitle",
+            "type": "string"
+          },
+          "image": {
+            "title": "Hero image",
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "LandingHeroTwoColumns",
+      "schema": {
+        "title": "Landing Hero two columns",
+        "description": "Landing Hero with two columns Component",
+        "type": "object",
+        "properties": {
+          "title": {
+            "title": "Hero Title",
+            "type": "string"
+          },
+          "subtitle": {
+            "title": "Hero Subtitle",
+            "type": "string"
+          },
+          "image": {
+            "title": "Hero image",
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "MoreToExplore",
+      "schema": {
+        "title": "More To Explore",
+        "description": "More To Explore items",
+        "type": "object",
+        "required": [
+          "title"
+        ],
+        "properties": {
+          "title": {
+            "title": "Title",
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "GetInspired",
+      "schema": {
+        "title": "Get Inspired",
+        "description": "Social media links",
+        "type": "object"
+      }
+    },
+    {
+      "name": "RichText",
+      "schema": {
+        "title": "Rich Text",
+        "description": "Rich text component",
+        "type": "object",
+        "properties": {
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          },
+          "isMainDescription": {
+            "title": "Is the main description?",
+            "type": "boolean",
+            "default": false
+          }
+        }
+      }
+    },
+    {
+      "name": "RoomIdeasNavigation",
+      "schema": {
+        "title": "Room Ideas Navigation",
+        "type": "object",
+        "description": "Room Ideas Navigation",
+        "properties": {
+          "navigation": {
+            "title": "Navigation",
+            "type": "object",
+            "properties": {
+              "menu": {
+                "title": "Menu",
+                "type": "array",
+                "maxItems": 9,
+                "description": "Enter the Room Ideas Categories List",
+                "items": {
+                  "title": "Item",
+                  "type": "object",
+                  "required": ["text", "url"],
+                  "properties": {
+                    "text": {
+                      "title": "Text",
+                      "type": "string"
+                    },
+                    "url": {
+                      "title": "URL",
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "grid": {
+                "title": "Grid",
+                "type": "array",
+                "maxItems": 9,
+                "description": "Enter the Room Ideas Grid",
+                "items": {
+                  "title": "Item",
+                  "type": "object",
+                  "properties": {
+                    "image": {
+                      "title": "Image",
+                      "type": "object",
+                      "properties": {
+                        "src": {
+                          "title": "Source",
+                          "type": "string",
+                          "widget": {
+                            "ui:widget": "media-gallery"
+                          }
+                        },
+                        "alt": {
+                          "title": "Alternative Label",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "url": {
+                      "title": "URL",
+                      "type": "string"
+                    },
+                    "title": {
+                      "title": "Item title (optional)",
+                      "type": "string"
+                    },
+                    "button": {
+                      "title": "Item button (optional)",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "return": {
+            "title": "Go Back Button",
+            "type": "object",
+            "properties": {
+              "text": {
+                "title": "Text",
+                "type": "string"
+              },
+              "url": {
+                "title": "URL",
+                "type": "string"
+              },
+              "newWindow": {
+                "title": "Open link in new window?",
+                "type": "boolean",
+                "default": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "RoomIdea",
+      "schema": {
+        "title": "Room Idea",
+        "type": "object",
+        "description": "Room Idea Component",
+        "properties": {
+          "image": {
+            "title": "Image",
+            "type": "object",
+            "properties": {
+              "src": {
+                "title": "Source",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "media-gallery"
+                }
+              },
+              "alt": {
+                "title": "Alternative Label",
+                "type": "string"
+              }
+            }
+          },
+          "productGrid": {
+            "title": "Product Grid",
+            "type": "object",
+            "properties": {
+              "sort": {
+                "title": "Sort",
+                "description": "Items order",
+                "default": "score_desc",
+                "enum": [
+                  "discount_desc",
+                  "name_asc",
+                  "name_desc",
+                  "orders_desc",
+                  "price_asc",
+                  "price_desc",
+                  "release_desc",
+                  "score_desc"
+                ],
+                "enumNames": [
+                  "Discount: higher to lower",
+                  "Name: A-Z",
+                  "Name: Z-A",
+                  "Orders: higher to lower",
+                  "Price: lower to higher",
+                  "Price: higher to lower",
+                  "Release date: newer to older",
+                  "Relevance: higher to lower"
+                ]
+              },
+              "term": {
+                "type": "string",
+                "title": "Search term"
+              },
+              "selectedFacets": {
+                "title": "Facets",
+                "type": "array",
+                "items": {
+                  "title": "Facet",
+                  "type": "object",
+                  "required": ["key", "value"],
+                  "properties": {
+                    "key": {
+                      "title": "Key",
+                      "type": "string",
+                      "enum": [
+                        "productClusterIds",
+                        "brand",
+                        "category-1"
+                      ],
+                      "enumNames": [
+                        "Collection (ID)",
+                        "Brand (Name)",
+                        "Category Level 1 (Name)"
+                      ]
+                    },
+                    "value": {
+                      "title": "Value",
+                      "type": "string",
+                      "default": "141"
+                    }
+                  }
+                }
+              },
+              "richText": {
+                "title": "Rich Text",
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "title": "Title",
+                    "type": "string"
+                  },
+                  "description": {
+                    "title": "Description",
+                    "type": "string"
+                  }
+                }
+              },
+              "return": {
+                "title": "Go Back Button",
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "title": "Text",
+                    "type": "string"
+                  },
+                  "url": {
+                    "title": "URL",
+                    "type": "string"
+                  },
+                  "newWindow": {
+                    "title": "Open link in new window?",
+                    "type": "boolean",
+                    "default": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   ]

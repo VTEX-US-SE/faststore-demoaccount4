@@ -1,0 +1,99 @@
+.RoomIdea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    [data-fs-room-idea-products] {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        [data-fs-room-idea-products-container] {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1280px;
+            min-width: 960px;
+
+            [data-fs-product-card] {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                width: calc((100% - 140px) / 4);
+                display: flex;
+                flex-direction: column;
+                margin: 15px;
+
+                [data-fs-link] {
+                    text-decoration: none;
+                }
+
+                [data-fs-product-card-title] {
+                    font-size: 14px;
+                    line-height: 21px;
+                    margin-bottom: 10px;
+                    text-decoration: none;
+
+                    [data-fs-link] {
+                        text-decoration: none;
+                        color: var(--fs-color-main-3);
+
+                        &:hover {
+                            color: var(--fs-color-accent-2);
+                        }
+                    }
+                }
+
+                [data-fs-product-card-image] {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+
+                    img {
+                        border-radius: 5px;
+                    }
+                }
+
+                [data-fs-product-card-pricing] {
+                    display: flex;
+                    flex-direction: row;
+                    font-size:  16px;
+                    color: var(--fs-color-main-3);
+                    font-weight: 700;
+                    margin-bottom: 8px;
+                }
+
+                [data-fs-product-card-footer] {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    [data-fs-shipping] {
+                        font-size: 12px;
+                        color: var(--fs-color-main-3);
+                    }
+                }
+            }
+        }
+    }
+
+    [data-fs-room-idea-return] {
+        margin: 70px auto 60px;
+
+        [data-fs-room-idea-return-link] {
+            border: 1px solid var(--fs-color-main-4);
+            color: var(--fs-color-main-4);
+            border-radius: 5px;
+            padding: 7px 19px;
+            text-decoration: none;
+
+            &:hover {
+                color: var(--fs-color-accent-2);
+            }
+        }
+    }
+}
