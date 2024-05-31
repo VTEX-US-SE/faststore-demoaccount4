@@ -8,6 +8,8 @@ module.exports = {
 },
 
   // Theming
+  // Theming
+
   theme: 'custom-theme',
 
   // Ecommerce Platform
