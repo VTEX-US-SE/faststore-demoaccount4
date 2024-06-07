@@ -1239,10 +1239,10 @@
   resolved "https://registry.yarnpkg.com/@faststore/graphql-utils/-/graphql-utils-3.0.63.tgz#c798c21cda9ebf20b080fec79ea40fc5ccbea191"
   integrity sha512-Q2N9nDCjZnJ9gEbqQpKqC+WIJ2/SHD7j3mOyFcViAPrlJXnGONXI8Y7BT2xbDfJeNzxKj2D/FddZY2eQ6iS+jQ==
 
-"@faststore/lighthouse@^3.0.63":
-  version "3.0.63"
-  resolved "https://registry.yarnpkg.com/@faststore/lighthouse/-/lighthouse-3.0.63.tgz#02503a8f0126917fbbabceb8b68ba96279e8affb"
-  integrity sha512-bv/egvnmAhmv4hq5DhRO/lg7rJzSBICOUJDcrIzGJVjkABTrr/R7EyL+OhPqL6+LRPZ6aPfi7cK48NI90/urDg==
+"@faststore/lighthouse@^3.0.68":
+  version "3.0.68"
+  resolved "https://registry.yarnpkg.com/@faststore/lighthouse/-/lighthouse-3.0.68.tgz#b013df368e42ed61b848dcbe7c647de9be37dea0"
+  integrity sha512-UBgqRgwvyqpTVXdwkkN0sUzkORSfdeqbYH+tCvrgnSfdasAaqK9bCrPtGBiFJJsUyqEknrHZQFrGzAhiVrrfiQ==
 
 "@faststore/sdk@^3.0.63":
   version "3.0.63"
